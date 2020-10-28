@@ -1,0 +1,11 @@
+<ul>
+    <a href="/">Home</a>
+
+    {{#if loggedIn}}
+        <a href="/profile">Profile</a>
+        <a href="/logout">Logout</a>
+    {{else}}
+        <a href="/login">Login</a>
+        <a href="/signup">Signup</a>
+    {{/if}}
+</ul>
